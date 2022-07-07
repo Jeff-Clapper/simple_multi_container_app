@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect, request
 from config.mysqlconnection import connectToMySQL
 
 app = Flask(__name__)
+print("App has started")
 
 @app.route("/")
 def home():
