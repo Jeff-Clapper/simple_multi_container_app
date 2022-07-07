@@ -13,7 +13,7 @@ services:
     container_name: mysql-db
     image: mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=admin
+      # - MYSQL_ROOT_PSSWORD=      ADD A TO THE WORD AND ADD THE VALUE
     restart: always
     ports:
       - "3308:3306"
