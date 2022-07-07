@@ -1,7 +1,28 @@
 services:
-  web:
+  flask-app:
     build: 
       context: .
       dockerfile: dockerfile
     ports:
       - "5000:5000"
+    restart: always
+    networks:
+      - myflaskapp
+  
+  mysql-db:
+    container_name: mysql-db
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin
+    restart: always
+    ports:
+      - "3308:3306"
+    networks:
+      - myflaskapp
+    volumes:
+      - "./database:/docker-entrypoint-initdb.d/database/install_db.sql"
+    
+
+
+networks:
+  myflaskapp: 
