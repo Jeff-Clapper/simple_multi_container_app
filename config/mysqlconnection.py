@@ -2,11 +2,9 @@ import pymysql.cursors
 
 class MySQLConnection:
     def __init__(self, db):
-        connection = pymysql.connect(host = 'localhost',
+        connection = pymysql.connect(host = 'localhost:3308',
                                     user = 'root',
-
-                                    # CORRECT THE WORD AND ADD THE VALUE
-                                    # psswrd = '', 
+                                    password = 'admin', 
                                     db = db,
                                     charset = 'utf8mb4',
                                     cursorclass = pymysql.cursors.DictCursor,

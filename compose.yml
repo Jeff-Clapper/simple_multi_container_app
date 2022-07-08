@@ -13,14 +13,15 @@ services:
     container_name: mysql-db
     image: mysql
     environment:
-      # - MYSQL_ROOT_PSSWORD=      ADD A TO THE WORD AND ADD THE VALUE
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: mydb
     restart: always
     ports:
       - "3308:3306"
     networks:
       - myflaskapp
     volumes:
-      - "./database:/docker-entrypoint-initdb.d/database/install_db.sql"
+      - "./database/mydb_quotes.sql:/docker-entrypoint-initdb.d/install_db.sql"
     
 
 
