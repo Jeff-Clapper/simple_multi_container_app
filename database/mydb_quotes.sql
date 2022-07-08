@@ -39,7 +39,7 @@ CREATE TABLE `quotes` (
 
 LOCK TABLES `quotes` WRITE;
 /*!40000 ALTER TABLE `quotes` DISABLE KEYS */;
-INSERT INTO `quotes` VALUES (1,'I ran and I ran','2022-06-29 21:03:26','2022-06-29 21:03:26'),(2,'Bah bah bah, barbra-ann','2022-06-29 21:03:26','2022-06-29 21:03:26'),(3,'Deez....... Deez nuts','2022-06-29 21:03:26','2022-06-29 21:03:26'),(4,'Hello Darkness my old friend','2022-06-29 21:20:06','2022-06-29 21:20:06'),(5,'Are we there yet?','2022-06-29 21:28:08','2022-06-29 21:28:08');
+INSERT INTO `quotes` VALUES (1,'Fortune favors the bold','2022-06-29 21:03:26','2022-06-29 21:03:26'),(2,'Tantum in corpore sacculi','2022-06-29 21:03:26','2022-06-29 21:03:26'),(3,'Winning isnt everything, its the only thing.','2022-06-29 21:03:26','2022-06-29 21:03:26'),(4,'Hello Darkness my old friend','2022-06-29 21:20:06','2022-06-29 21:20:06'),(5,'Are we there yet?','2022-06-29 21:28:08','2022-06-29 21:28:08');
 /*!40000 ALTER TABLE `quotes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

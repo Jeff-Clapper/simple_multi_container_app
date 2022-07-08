@@ -8,6 +8,8 @@ services:
     restart: always
     networks:
       - myflaskapp
+    depends_on:
+      - mysql-db
   
   mysql-db:
     container_name: mysql-db
@@ -22,8 +24,6 @@ services:
       - myflaskapp
     volumes:
       - "./database/mydb_quotes.sql:/docker-entrypoint-initdb.d/install_db.sql"
-    
-
 
 networks:
   myflaskapp: 
